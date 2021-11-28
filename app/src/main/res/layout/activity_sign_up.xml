@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/grayBackground"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_gravity="center"
+
+        android:src="@drawable/chat" />
+
+    <EditText
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/lightGrey"
+        android:hint="Full Name"
+        android:id="@+id/etName"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:id="@+id/etEmail"
+        android:layout_gravity="center"
+        android:layout_marginEnd="40dp"
+        android:background="@color/lightGrey"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:textColor="@color/black"
+
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/etPassword"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginEnd="40dp"
+        android:layout_gravity="center"
+
+        android:background="@color/lightGrey"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have account"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:id="@+id/tvHaveAccount"
+        android:textSize="15sp"
+        android:layout_marginStart="40dp"
+        android:gravity="end"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:id="@+id/btnSignUp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:padding="13dp"
+            android:id="@+id/btnGoogle"
+            android:src="@drawable/google"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:id="@+id/btnFb"
+            android:src="@drawable/facebook"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:id="@+id/btnPhone"
+            android:src="@drawable/phone"/>
+    </LinearLayout>
+
+</LinearLayout>
